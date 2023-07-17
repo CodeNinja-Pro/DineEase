@@ -32,13 +32,16 @@ export default {
     axios.get("/assets/data/pos/customer-order.json").then((response) => {
       //   this.menu = response.data;
       this.order = response.data.order;
-      this.orderNo = response.data.orderNo;
-      this.orderHistory = response.data.orderHistory;
-      this.tableNo = response.data.tableNo;
+      // this.orderNo = response.data.orderNo;
+      // this.orderHistory = response.data.orderHistory;
+      // this.tableNo = response.data.tableNo;
     });
     axios.get("http://localhost:8081/api/foods").then((response) => {
-      console.log(response.data);
+      // console.log(response.data);
       this.menu = response.data;
+      this.orderNo = response.data.orderNo || 4721;
+      this.orderHistory = response.data.orderHistory;
+      this.tableNo = response.data.tableNo || 6273;
     });
   },
   beforeUnmount() {
