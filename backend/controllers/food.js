@@ -8,6 +8,7 @@ import {
   updateFoodById,
   deleteFoodById,
 } from "../models/FoodModel.js";
+// import { getOrders } from "../models/OrderTableModel.js";
 
 // get all Foods
 export const showFoods = (req, res) => {
@@ -19,11 +20,18 @@ export const showFoods = (req, res) => {
       if (err) {
         return res.send(err);
       }
+      // getOrders((err, categories) => {
+      //   if (err) {
+      //     console.log(err);
+      //     return res.send(err);
+      //   }
       const menu = {
         food: foods,
         category: categories,
+        // orderHistory: [],
       };
       res.json(menu);
+      // });
     });
   });
 };

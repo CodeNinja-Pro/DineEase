@@ -13,6 +13,7 @@ export const getFoods = (result) => {
       }
       foods.map((food) => {
         //Get addon options
+        food.options = {};
         db.query(
           "SELECT addons.text, addons.price FROM `foods_addons` as foods_addons left join addons as addons on foods_addons.addon_id = addons.id where food_id=" +
             food.id,

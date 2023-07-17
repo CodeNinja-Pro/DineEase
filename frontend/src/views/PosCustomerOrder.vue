@@ -20,6 +20,7 @@ export default {
       modalSelectedSize: "",
       modalSelectedAddon: [],
       mobileSidebarToggled: false,
+      submitConfirmModalToggled: false,
     };
   },
   mounted() {
@@ -47,6 +48,9 @@ export default {
     appOption.appContentFullHeight = false;
   },
   methods: {
+    toggleSubmitConfirmModal: function (value) {
+      this.submitConfirmModalToggled = value;
+    },
     toggleMobileSidebar: function () {
       this.mobileSidebarToggled = !this.mobileSidebarToggled;
     },
@@ -209,10 +213,61 @@ export default {
         }
       }
     },
+    submitOrder: function (event) {
+      // event.preventDefault();
+      this.toggleSubmitConfirmModal = false;
+      const order = {
+        orderBy: "Edwin Jacksn",
+        dueAt: "2023.07.15",
+        orderedFoods: this.order,
+      };
+      axios.post("http://localhost:8081/api/orders", order);
+    },
   },
 };
 </script>
 <template>
+  <!-- Sumbit Confirm Modal -->
+
+  <!-- <button
+    type="button"
+    class="btn btn-outline-theme me-2"
+    data-bs-toggle="modal"
+    data-bs-target="#modalXl"
+  >
+    Extra large modal
+  </button> -->
+
+  <div class="modal fade" id="modalXl">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Are you sure?</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Total price is ${{ this.getTotalPrice() }}. <br />
+            Is everything Ok?
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-bs-dismiss="modal">
+            Let me consider again
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-theme"
+            v-on:click="submitOrder()"
+            data-bs-dismiss="modal"
+          >
+            Sure
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- BEGIN pos -->
   <card class="pos" v-bind:class="{ 'pos-mobile-sidebar-toggled': mobileSidebarToggled }">
     <card-body class="pos-container">
@@ -482,7 +537,13 @@ export default {
                   <i class="bi bi-receipt fa-fw fa-lg"></i><br />
                   <span class="small">Bill</span>
                 </a>
-                <a href="#" class="btn btn-outline-theme rounded-0 w-150px">
+                <a
+                  href="#"
+                  v-on:click="toggleSubmitConfirmModal(true)"
+                  class="btn btn-outline-theme rounded-0 w-150px"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalXl"
+                >
                   <i class="bi bi-send-check fa-lg"></i><br />
                   <span class="small">Submit Order</span>
                 </a>
