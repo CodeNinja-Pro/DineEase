@@ -3,14 +3,13 @@ import mysql from "mysql2";
 // create the connection to database
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "db_restaurant"
+  host: "localhost",
+  user: "root",
+  password: "",
+  database: "my_test_db",
 });
 
-
-db.connect(error => {
+db.connect((error) => {
   if (error) throw error;
   console.log("Successfully connected to the database.");
 });
