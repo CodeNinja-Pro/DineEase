@@ -1,0 +1,32 @@
+<script>
+import chartjs from '@/components/plugins/Chartjs.vue';
+import { useAppVariableStore } from '@/stores/app-variable';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data () {
+    return {
+      chart: {
+        type: 'doughnut',
+        data: {
+          labels: ['Total Visitor', 'New Visitor', 'Returning Visitor'],
+          datasets: [{
+            data: [300, 50, 100],
+            backgroundColor: ['rgba('+ appVariable.color.themeRgb +', .5)', 'rgba('+ appVariable.color.inverseRgb +', .2)' +', .5)', 'rgba('+ appVariable.color.themeRgb +', .5)'],
+            hoverBackgroundColor: [appVariable.color.theme, appVariable.color.inverse, appVariable.color.gray900],
+            borderWidth: 0
+          }]
+        }
+      }
+    }
+  },
+  components: {
+    chartjs: chartjs
+  }
+}
+</script>
+
+<template>
+  <chartjs :type="chart.type" :data="chart.data"></chartjs>
+</template>

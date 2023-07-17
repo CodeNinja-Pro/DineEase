@@ -1,0 +1,17 @@
+<!-- background & border -->
+<card class="bg-theme border-theme bg-opacity-25 mb-3">
+  <card-header class="border-theme fw-bold small text-inverse">...</card-header>
+  <card-body>
+    <h5 class="card-title text-inverse">...</h5>
+    <p class="card-text text-inverse text-opacity-75">...</p>
+  </card-body>
+</card>
+
+<!-- border & color -->
+<card class="border-theme mb-3">
+  <card-header class="border-theme fw-bold small text-theme">...</card-header>
+  <card-body>
+    <h5 class="card-title text-theme">...</h5>
+    <p class="card-text text-theme text-opacity-75">...</p>
+  </card-body>
+</card>

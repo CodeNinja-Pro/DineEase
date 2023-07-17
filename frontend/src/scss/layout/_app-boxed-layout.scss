@@ -1,0 +1,19 @@
+.app-boxed-layout {
+	@include media-breakpoint-up(lg) {
+		min-height: 100vh;
+	
+		&,
+		& .app-header {
+			max-width: rem(1280px);
+			margin-left: auto;
+			margin-right: auto;
+		}
+		& .app-sidebar {
+			@if $enable-rtl {
+				right: auto;
+			} @else {
+				left: auto;
+			}
+		}
+	}
+}

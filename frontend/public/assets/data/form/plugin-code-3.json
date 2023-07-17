@@ -1,0 +1,14 @@
+<script>
+import datepicker from '@/components/plugins/Datepicker.vue';
+
+export default {
+  components: {
+    datepicker: datepicker
+  }
+}
+</script>
+
+<template>
+  <!-- default -->
+  <datepicker timePicker></datepicker>
+</template>

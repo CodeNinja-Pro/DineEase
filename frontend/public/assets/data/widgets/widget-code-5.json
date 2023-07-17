@@ -1,0 +1,10 @@
+<div class="widget-user-list">
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link"><img src="assets/img/user/user-1.jpg" alt=""></a></div>
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link"><img src="assets/img/user/user-2.jpg" alt=""></a></div>
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link"><img src="assets/img/user/user-3.jpg" alt=""></a></div>
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link"><img src="assets/img/user/user-4.jpg" alt=""></a></div>
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link"><img src="assets/img/user/user-5.jpg" alt=""></a></div>
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link"><img src="assets/img/user/user-6.jpg" alt=""></a></div>
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link"><img src="assets/img/user/user-7.jpg" alt=""></a></div>
+  <div class="widget-user-list-item"><a href="#" class="widget-user-list-link bg-gray-200 text-gray-500 fs-12px fw-bold">+26</a></div>
+</div>

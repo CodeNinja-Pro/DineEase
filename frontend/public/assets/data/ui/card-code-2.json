@@ -1,0 +1,6 @@
+<card>
+  <card-header class="fw-bold small d-flex">
+    <span class="flex-grow-1">...</span>
+    <card-expand-toggler></card-expand-toggler>
+  </card-header>
+</card>

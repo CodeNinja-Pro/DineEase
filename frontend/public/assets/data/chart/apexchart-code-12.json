@@ -1,0 +1,57 @@
+<script>
+import { useAppVariableStore } from '@/stores/app-variable';
+import apexchart from '@/components/plugins/Apexcharts.vue';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data() {
+    return {
+      chart: {
+        height: 320,
+        series: [{
+          name: 'Series 1',
+          data: [20, 100, 40, 30, 50, 80, 33],
+        }],
+        options: {
+          chart: { type: 'radar' },
+          labels: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+          plotOptions: {
+            radar: {
+              size: 140,
+              polygons: {
+                strokeColors: 'rgba('+ appVariable.color.inverseRgb +', .25)',
+                strokeWidth: 1,
+                connectorColors: 'rgba('+ appVariable.color.inverseRgb +', .25)',
+                fill: {
+                  colors: ['rgba('+appVariable.color.gray300Rgb +', .25)', 'rgba('+ appVariable.color.inverseRgb + ', .25)']
+                }
+              }
+            }
+          },
+          title: { text: 'Radar with Polygon Fill' },
+          colors: [appVariable.color.theme],
+          markers: {
+            size: 4,
+            colors: [appVariable.color.theme],
+            strokeColor: appVariable.color.theme,
+            strokeWidth: 2,
+          },
+          tooltip: { y: { formatter: function(val) { return val } } },
+          yaxis: {
+            tickAmount: 7,
+            labels: { formatter: function(val, i) { return (i % 2 === 0) ? val : ''; } }
+          }
+        }
+      }
+    }
+  },
+  components: {
+    apexchart: apexchart
+  }
+}
+</script>
+
+<template>
+  <apexchart :height="chart.height" :options="chart.options" :series="chart.series"></apexchart>
+</template>

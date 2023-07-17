@@ -1,0 +1,11 @@
+<script>
+import { vMaska } from 'maska';
+
+export default {
+  directives: { maska: vMaska }
+}
+</script>
+
+<template>
+  <input class="form-control" v-maska="'(###) ###-####'" placeholder="(999) 999-9999">
+</template>

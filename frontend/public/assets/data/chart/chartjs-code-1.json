@@ -1,0 +1,40 @@
+<script>
+import chartjs from '@/components/plugins/Chartjs.vue';
+import { useAppVariableStore } from '@/stores/app-variable';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data () {
+    return {
+      chart: {
+        type: 'line',
+        data: {
+          labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+          datasets: [{
+            color: appVariable.color.theme,
+            backgroundColor: 'rgba('+ appVariable.color.themeRgb +', .2)',
+            borderColor: appVariable.color.theme,
+            borderWidth: 1.5,
+            pointBackgroundColor: appVariable.color.theme,
+            pointBorderWidth: 1.5,
+            pointRadius: 4,
+            pointHoverBackgroundColor: appVariable.color.theme,
+            pointHoverBorderColor: appVariable.color.theme,
+            pointHoverRadius: 7,
+            label: 'Total Sales',
+            data: [12, 19, 4, 5, 2, 3]
+          }]
+        }
+      }
+    }
+  },
+  components: {
+    chartjs: chartjs
+  }
+}
+</script>
+
+<template>
+  <chartjs :type="chart.type" :data="chart.data"></chartjs>
+</template>

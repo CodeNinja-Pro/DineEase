@@ -1,0 +1,12 @@
+<script>
+import quillEditor from '@/components/plugins/quillEditor.vue';
+
+export default {
+  components: {
+    quillEditor: quillEditor
+  }
+}
+</script>
+<template>
+  <quill-editor theme="snow"></quill-editor>
+</template>

@@ -1,0 +1,16 @@
+<script>
+import { useAppOptionStore } from '@/stores/app-option';
+
+const appOption = useAppOptionStore();
+
+export default {
+  mounted() {
+    appOption.appContentFullHeight = true;
+    appOption.appContentClass = 'p-0';
+  },
+  beforeUnmount() {
+    appOption.appFooterFixed = false;
+    appOption.appFooter = false;
+  }
+}
+</script>

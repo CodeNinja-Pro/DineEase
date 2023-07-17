@@ -1,0 +1,18 @@
+<!-- border spinner -->
+<div class="spinner-border"></div>
+
+<!-- grow spinner -->
+<div class="spinner-grow"></div>
+
+<!-- colors -->
+<div class="spinner-grow text-primary"></div>
+<div class="spinner-grow text-secondary"></div>
+<div class="spinner-grow text-success"></div>
+<div class="spinner-grow text-danger"></div>
+<div class="spinner-grow text-warning"></div>
+<div class="spinner-grow text-info"></div>
+<div class="spinner-grow text-light"></div>
+<div class="spinner-grow text-dark"></div>
+
+<!-- size -->
+<div class="spinner-grow spinner-grow-sm"></div>

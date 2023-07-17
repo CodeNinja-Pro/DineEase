@@ -1,0 +1,448 @@
+{
+	"tables": [{
+		"id": 1,
+		"tableNo": "01",
+		"pax": "4",
+		"totalPax": "4",
+		"status": "Unpaid",
+		"totalTime": "35:20",
+		"orderNo": "0001",
+		"orders": [{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Grill Pork Chop",
+			"quantity": 1,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-8.jpg",
+			"title": "Orange Juice",
+			"quantity": 2,
+			"price": "5.00",
+			"options": ["size: large", "less ice"]
+		},{
+			"image": "/assets/img/pos/product-13.jpg",
+			"title": "Vanilla Ice-cream",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["scoop: 1", "flavour: vanilla"]
+		},{
+			"image": "/assets/img/pos/product-1.jpg",
+			"title": "Grill Chicken Chop",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "spicy: medium"]
+		},{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom Soup",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "more cheese"]
+		},{
+			"image": "/assets/img/pos/product-15.jpg",
+			"title": "Hawaiian Pizza",
+			"quantity": 1,
+			"price": "15.00",
+			"options": ["size: large", "more onion"]
+		},{
+			"image": "/assets/img/pos/product-14.jpg",
+			"title": "Perfect Yeast Doughnuts",
+			"quantity": 1,
+			"price": "2.99",
+			"options": ["size: medium", "flavour: random"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Macarons",
+			"quantity": 1,
+			"price": "4.99",
+			"options": ["size: small", "flavour: random"]
+		}]
+	},{
+		"id": 2,
+		"tableNo": "02",
+		"pax": "6",
+		"totalPax": "8",
+		"status": "Unpaid",
+		"totalTime": "12:69",
+		"orderNo": "0002",
+		"orders": [{
+			"image": "/assets/img/pos/product-7.jpg",
+			"title": "Coffee Latte",
+			"quantity": 5,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-8.jpg",
+			"title": "Vita C Detox Juice",
+			"quantity": 6,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-9.jpg",
+			"title": "Pancake",
+			"quantity": 6,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom soup",
+			"quantity": 8,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Grill Pork Chop",
+			"quantity": 1,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-8.jpg",
+			"title": "Orange Juice",
+			"quantity": 2,
+			"price": "5.00",
+			"options": ["size: large", "less ice"]
+		},{
+			"image": "/assets/img/pos/product-13.jpg",
+			"title": "Vanilla Ice-cream",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["scoop: 1", "flavour: vanilla"]
+		},{
+			"image": "/assets/img/pos/product-1.jpg",
+			"title": "Grill Chicken Chop",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "spicy: medium"]
+		},{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom Soup",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "more cheese"]
+		},{
+			"image": "/assets/img/pos/product-15.jpg",
+			"title": "Hawaiian Pizza",
+			"quantity": 1,
+			"price": "15.00",
+			"options": ["size: large", "more onion"]
+		},{
+			"image": "/assets/img/pos/product-14.jpg",
+			"title": "Perfect Yeast Doughnuts",
+			"quantity": 1,
+			"price": "2.99",
+			"options": ["size: medium", "flavour: random"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Macarons",
+			"quantity": 1,
+			"price": "4.99",
+			"options": ["size: small", "flavour: random"]
+		}]
+	},{
+		"id": 3,
+		"tableNo": "03",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 4,
+		"tableNo": "04",
+		"pax": "0",
+		"totalPax": "4",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 5,
+		"tableNo": "05",
+		"pax": "0",
+		"totalPax": "4",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 6,
+		"tableNo": "06",
+		"pax": "3",
+		"totalPax": "6",
+		"status": "Unpaid",
+		"totalTime": "",
+		"orderNo": "0003",
+		"orders": [{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom soup",
+			"quantity": 8,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Grill Pork Chop",
+			"quantity": 1,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-8.jpg",
+			"title": "Orange Juice",
+			"quantity": 2,
+			"price": "5.00",
+			"options": ["size: large", "less ice"]
+		},{
+			"image": "/assets/img/pos/product-13.jpg",
+			"title": "Vanilla Ice-cream",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["scoop: 1", "flavour: vanilla"]
+		},{
+			"image": "/assets/img/pos/product-1.jpg",
+			"title": "Grill Chicken Chop",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "spicy: medium"]
+		}]
+	},{
+		"id": 7,
+		"tableNo": "07",
+		"pax": "3",
+		"totalPax": "4",
+		"status": "Paid",
+		"totalTime": "58:40",
+		"orders": [{
+			"image": "/assets/img/pos/product-9.jpg",
+			"title": "Pancake",
+			"quantity": 6,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom soup",
+			"quantity": 8,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Grill Pork Chop",
+			"quantity": 1,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-8.jpg",
+			"title": "Orange Juice",
+			"quantity": 2,
+			"price": "5.00",
+			"options": ["size: large", "less ice"]
+		},{
+			"image": "/assets/img/pos/product-13.jpg",
+			"title": "Vanilla Ice-cream",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["scoop: 1", "flavour: vanilla"]
+		},{
+			"image": "/assets/img/pos/product-1.jpg",
+			"title": "Grill Chicken Chop",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "spicy: medium"]
+		}]
+	},{
+		"id": 8,
+		"tableNo": "08",
+		"pax": "2",
+		"totalPax": "4",
+		"status": "Unpaid",
+		"totalTime": "05:12",
+		"orders": [{
+			"image": "/assets/img/pos/product-14.jpg",
+			"title": "Perfect Yeast Doughnuts",
+			"quantity": 1,
+			"price": "2.99",
+			"options": ["size: medium", "flavour: random"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Macarons",
+			"quantity": 1,
+			"price": "4.99",
+			"options": ["size: small", "flavour: random"]
+		}]
+	},{
+		"id": 9,
+		"tableNo": "09",
+		"pax": "2",
+		"totalPax": "4",
+		"status": "Unpaid",
+		"totalTime": "52:58",
+		"orders": [{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom Soup",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "more cheese"]
+		},{
+			"image": "/assets/img/pos/product-15.jpg",
+			"title": "Hawaiian Pizza",
+			"quantity": 1,
+			"price": "15.00",
+			"options": ["size: large", "more onion"]
+		},{
+			"image": "/assets/img/pos/product-14.jpg",
+			"title": "Perfect Yeast Doughnuts",
+			"quantity": 1,
+			"price": "2.99",
+			"options": ["size: medium", "flavour: random"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Macarons",
+			"quantity": 1,
+			"price": "4.99",
+			"options": ["size: small", "flavour: random"]
+		}]
+	},{
+		"id": 10,
+		"tableNo": "10",
+		"pax": "9",
+		"totalPax": "12",
+		"status": "Paid",
+		"totalTime": "66.69",
+		"orders": [{
+			"image": "/assets/img/pos/product-7.jpg",
+			"title": "Coffee Latte",
+			"quantity": 5,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-8.jpg",
+			"title": "Vita C Detox Juice",
+			"quantity": 6,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-9.jpg",
+			"title": "Pancake",
+			"quantity": 6,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom soup",
+			"quantity": 8,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Grill Pork Chop",
+			"quantity": 1,
+			"price": "12.99",
+			"options": ["size: large"]
+		},{
+			"image": "/assets/img/pos/product-8.jpg",
+			"title": "Orange Juice",
+			"quantity": 2,
+			"price": "5.00",
+			"options": ["size: large", "less ice"]
+		},{
+			"image": "/assets/img/pos/product-13.jpg",
+			"title": "Vanilla Ice-cream",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["scoop: 1", "flavour: vanilla"]
+		},{
+			"image": "/assets/img/pos/product-1.jpg",
+			"title": "Grill Chicken Chop",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "spicy: medium"]
+		},{
+			"image": "/assets/img/pos/product-10.jpg",
+			"title": "Mushroom Soup",
+			"quantity": 1,
+			"price": "3.99",
+			"options": ["size: large", "more cheese"]
+		},{
+			"image": "/assets/img/pos/product-15.jpg",
+			"title": "Hawaiian Pizza",
+			"quantity": 1,
+			"price": "15.00",
+			"options": ["size: large", "more onion"]
+		},{
+			"image": "/assets/img/pos/product-14.jpg",
+			"title": "Perfect Yeast Doughnuts",
+			"quantity": 1,
+			"price": "2.99",
+			"options": ["size: medium", "flavour: random"]
+		},{
+			"image": "/assets/img/pos/product-2.jpg",
+			"title": "Macarons",
+			"quantity": 1,
+			"price": "4.99",
+			"options": ["size: small", "flavour: random"]
+		}]
+	},{
+		"id": 11,
+		"tableNo": "11",
+		"pax": "0",
+		"totalPax": "4",
+		"status": "Reserved",
+		"reserveName": "Sean",
+		"totalTime": ""
+	},{
+		"id": 12,
+		"tableNo": "12",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 13,
+		"tableNo": "13",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 14,
+		"tableNo": "14",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 15,
+		"tableNo": "15",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 16,
+		"tableNo": "16",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 17,
+		"tableNo": "17",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 18,
+		"tableNo": "18",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 19,
+		"tableNo": "19",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	},{
+		"id": 20,
+		"tableNo": "20",
+		"pax": "0",
+		"totalPax": "6",
+		"status": "",
+		"totalTime": ""
+	}]
+}

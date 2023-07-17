@@ -1,0 +1,9 @@
+<div class="row row-cols-1 row-cols-md-2 g-3">
+  <div class="col">
+    <card class="h-100">...</card>
+  </div>
+  <div class="col">
+    <card class="h-100">...</card>
+  </div>
+  ...
+</div>

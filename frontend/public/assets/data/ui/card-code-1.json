@@ -1,0 +1,22 @@
+<!-- basic usage -->
+<card>
+  <card-header class="card-header fw-bold small">CARD HEADER HERE</card-header>
+  <card-body>
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-3 text-inverse text-opacity-50">Card subtitle</h6>
+    <p class="card-text mb-3">...</p>
+    <div>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </card-body>
+</card>
+
+<!-- card with list-group -->
+<card>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">...</li>
+    <li class="list-group-item">Dapibus ac facilisis in</li>
+    <li class="list-group-item">Vestibulum at eros</li>
+  </ul>
+</card>

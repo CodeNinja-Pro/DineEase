@@ -1,0 +1,486 @@
+{
+	"tableNo": "01",
+	"orderNo": "#0029",
+	"category": [{
+		"icon": "fa fa-fw fa-utensils",
+		"text": "ALL DISHES",
+		"type": "all",
+		"active": true
+	},{
+		"icon": "fa fa-fw fa-drumstick-bite",
+		"text": "MEAT",
+		"type": "meat"
+	},{
+		"icon": "fa fa-fw fa-hamburger",
+		"text": "BURGER",
+		"type": "burger"
+	},{
+		"icon": "fa fa-fw fa-pizza-slice",
+		"text": "PIZZA",
+		"type": "pizza"
+	},{
+		"icon": "fa fa-fw fa-cocktail",
+		"text": "DRINKS",
+		"type": "drinks"
+	},{
+		"icon": "fa fa-fw fa-ice-cream",
+		"text": "DESSERTS",
+		"type": "desserts"
+	},{
+		"icon": "fa fa-fw fa-cookie-bite",
+		"text": "SNACKS",
+		"type": "snacks"
+	}],
+	"food": [{
+		"id": 1,
+		"title": "Grill Chicken Chop®",
+		"description": "chicken, egg, mushroom, salad",
+		"price": "10.99",
+		"image": "/assets/img/pos/product-1.jpg",
+		"type": "meat",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}],
+			"addon": [{
+				"text": "More BBQ sos",
+				"price": "0.00"
+			},{
+				"text": "Extra french fries",
+				"price": "1.00"
+			},{
+				"text": "Mushroom soup",
+				"price": "3.50"
+			},{
+				"text": "Lemon Juice Set",
+				"price": "2.50"
+			}]
+		}
+	}, {
+		"id": 2,
+		"title": "Grill Pork Chop®",
+		"description": "pork, egg, mushroom, salad",
+		"price": "12.99",
+		"image": "/assets/img/pos/product-2.jpg",
+		"type": "meat",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}],
+			"addon": [{
+				"text": "More BBQ sos",
+				"price": "0.00"
+			},{
+				"text": "Extra french fries",
+				"price": "1.00"
+			},{
+				"text": "Mushroom soup",
+				"price": "3.50"
+			},{
+				"text": "Lemon Juice Set",
+				"price": "2.50"
+			}]
+		}
+	}, {
+		"id": 3,
+		"title": "Capellini Tomato Sauce®",
+		"description": "spaghetti, tomato, mushroom",
+		"price": "11.99",
+		"image": "/assets/img/pos/product-3.jpg",
+		"type": "meat",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}],
+			"addon": [{
+				"text": "Mushroom soup",
+				"price": "3.50"
+			},{
+				"text": "Lemon Juice Set",
+				"price": "2.50"
+			}]
+		}
+	}, {
+		"id": 4,
+		"title": "Vegan Salad Bowl®",
+		"description": "apple, carrot, tomato",
+		"price": "6.99",
+		"image": "/assets/img/pos/product-4.jpg",
+		"type": "meat",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 5,
+		"title": "Hawaiian Pizza®",
+		"description": "pizza, crab meat, pineapple",
+		"price": "20.99",
+		"image": "/assets/img/pos/product-5.jpg",
+		"type": "pizza",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}],
+			"addon": [{
+				"text": "Mushroom soup",
+				"price": "3.50"
+			},{
+				"text": "Lemon Juice Set",
+				"price": "2.50"
+			}]
+		}
+	}, {
+		"id": 6,
+		"title": "Perfect Burger",
+		"description": "Dill pickle, cheddar cheese, tomato, red onion, ground chuck beef",
+		"price": "8.99",
+		"image": "/assets/img/pos/product-17.jpg",
+		"type": "burger",
+		"available": false,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}],
+			"addon": [{
+				"text": "Mushroom soup",
+				"price": "3.50"
+			},{
+				"text": "Lemon Juice Set",
+				"price": "2.50"
+			}]
+		}
+	}, {
+		"id": 7,
+		"title": "Avocado Shake",
+		"description": "avocado, milk, vanilla",
+		"price": "3.99",
+		"image": "/assets/img/pos/product-6.jpg",
+		"type": "drinks",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 8,
+		"title": "Coffee Latte",
+		"description": "espresso, milk",
+		"price": "2.99",
+		"image": "/assets/img/pos/product-7.jpg",
+		"type": "drinks",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 9,
+		"title": "Vita C Detox Juice",
+		"description": "apricot, apple, carrot and ginger juice",
+		"price": "2.99",
+		"image": "/assets/img/pos/product-8.jpg",
+		"type": "drinks",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 10,
+		"title": "Pancake",
+		"description": "Non dairy, egg, baking soda, sugar, all purpose flour",
+		"price": "5.99",
+		"image": "/assets/img/pos/product-9.jpg",
+		"type": "snacks",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 11,
+		"title": "Mushroom soup",
+		"description": "Evaporated milk, marsala wine, beef cubes, chicken broth, butter",
+		"price": "3.99",
+		"image": "/assets/img/pos/product-10.jpg",
+		"type": "snacks",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 12,
+		"title": "Baked chicken wing",
+		"description": "Chicken wings, a1 steak sauce, honey, cayenne pepper",
+		"price": "6.99",
+		"image": "/assets/img/pos/product-11.jpg",
+		"type": "snacks",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 13,
+		"title": "Veggie Spaghetti",
+		"description": "Yellow squash, pasta, roasted red peppers, zucchini",
+		"price": "12.99",
+		"image": "/assets/img/pos/product-12.jpg",
+		"type": "meat",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 14,
+		"title": "Vanilla Ice Cream",
+		"description": "Heavy whipping cream, white sugar, vanilla extract",
+		"price": "3.99",
+		"image": "/assets/img/pos/product-13.jpg",
+		"type": "desserts",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 15,
+		"title": "Perfect Yeast Doughnuts",
+		"description": "Chocolate hazelnut spread, bread flour, doughnuts, quick rise yeast, butter",
+		"price": "2.99",
+		"image": "/assets/img/pos/product-14.jpg",
+		"type": "desserts",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 16,
+		"title": "Macarons",
+		"description": "Almond flour, egg whites, heavy cream, food coloring, powdered sugar",
+		"price": "4.99",
+		"image": "/assets/img/pos/product-15.jpg",
+		"type": "desserts",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}, {
+		"id": 17,
+		"title": "Perfect Vanilla Cupcake",
+		"description": "Baking powder, all purpose flour, plain kefir, vanilla extract",
+		"price": "2.99",
+		"image": "/assets/img/pos/product-16.jpg",
+		"type": "desserts",
+		"available": true,
+		"options": {
+			"size": [{
+				"text": "Small",
+				"price": "0.00"
+			},{
+				"text": "Medium",
+				"price": "1.50"
+			},{
+				"text": "Large",
+				"price": "3.00"
+			}]
+		}
+	}],
+	"order": [{
+		"id": 1,
+		"image": "/assets/img/pos/product-2.jpg",
+		"title": "Grill Pork Chop",
+		"price": "12.99",
+		"options": [{
+			"key": "size",
+			"value": "large"
+		}],
+		"quantity": 1
+	}, {
+		"id": 2,
+		"image": "/assets/img/pos/product-8.jpg",
+		"title": "Orange Juice",
+		"price": "5.00",
+		"options": [{
+			"key": "size",
+			"value": "large"
+		},{
+			"key": "ice",
+			"value": "less"
+		}],
+		"quantity": 2
+	}, {
+		"id": 3,
+		"image": "/assets/img/pos/product-1.jpg",
+		"title": "Grill chicken chop",
+		"price": "10.99",
+		"options": [{
+			"key": "size",
+			"value": "large"
+		},{
+			"key": "spicy",
+			"value": "medium"
+		}],
+		"quantity": 1
+	}, {
+		"id": 4,
+		"image": "/assets/img/pos/product-5.jpg",
+		"title": "Hawaiian Pizza",
+		"price": "15.00",
+		"options": [{
+			"key": "size",
+			"value": "large"
+		},{
+			"key": "onion",
+			"value": "more"
+		}],
+		"quantity": 1
+	}, {
+		"id": 5,
+		"image": "/assets/img/pos/product-10.jpg",
+		"title": "Mushroom Soup",
+		"price": "3.99",
+		"options": [{
+			"key": "size",
+			"value": "large"
+		},{
+			"key": "cheese",
+			"value": "more"
+		}],
+		"quantity": 1
+	}],
+	"orderHistory": ""
+}

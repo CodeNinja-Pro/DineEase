@@ -1,0 +1,115 @@
+{
+	"menu": [{
+		"id": "1",
+		"image": "/assets/img/pos/product-1.jpg",
+		"title": "Grill Chicken Chop®",
+		"description": "chicken, egg, mushroom, salad",
+		"stock": 20,
+		"available": true
+	},{
+		"id": "2",
+		"image": "/assets/img/pos/product-2.jpg",
+		"title": "Grill Pork Chop®",
+		"description": "pork, egg, mushroom, salad",
+		"stock": 30,
+		"available": true
+	},{
+		"id": "3",
+		"image": "/assets/img/pos/product-3.jpg",
+		"title": "Capellini Tomato Sauce®",
+		"description": "spaghetti, tomato, mushroom",
+		"stock": 15,
+		"available": true
+	},{
+		"id": "4",
+		"image": "/assets/img/pos/product-4.jpg",
+		"title": "Vegan Salad Bowl®",
+		"description": "apple, carrot, tomato",
+		"stock": 0,
+		"available": false
+	},{
+		"id": "5",
+		"image": "/assets/img/pos/product-5.jpg",
+		"title": "Hawaiian Pizza®",
+		"description": "pizza, crab meat, pineapple",
+		"stock": 10,
+		"available": true
+	},{
+		"id": "6",
+		"image": "/assets/img/pos/product-6.jpg",
+		"title": "Avocado Shake",
+		"description": "avocado, milk, vanilla",
+		"stock": 0,
+		"available": false
+	},{
+		"id": "7",
+		"image": "/assets/img/pos/product-7.jpg",
+		"title": "Coffee Latte",
+		"description": "espresso, milk",
+		"stock": 0,
+		"available": false
+	},{
+		"id": "8",
+		"image": "/assets/img/pos/product-8.jpg",
+		"title": "Vita C Detox Juice",
+		"description": "apricot, apple, carrot and ginger juice",
+		"stock": 0,
+		"available": false
+	},{
+		"id": "9",
+		"image": "/assets/img/pos/product-9.jpg",
+		"title": "Pancake",
+		"description": "Non dairy, egg, baking soda, sugar, all purpose flour",
+		"stock": 13,
+		"available": true
+	},{
+		"id": "10",
+		"image": "/assets/img/pos/product-10.jpg",
+		"title": "Mushroom soup",
+		"description": "Evaporated milk, marsala wine, beef cubes, chicken broth, butter",
+		"stock": 30,
+		"available": true
+	},{
+		"id": "11",
+		"image": "/assets/img/pos/product-11.jpg",
+		"title": "Baked chicken wing",
+		"description": "Chicken wings, a1 steak sauce, honey, cayenne pepper",
+		"stock": 32,
+		"available": true
+	},{
+		"id": "12",
+		"image": "/assets/img/pos/product-12.jpg",
+		"title": "Veggie Spaghetti",
+		"description": "Yellow squash, pasta, roasted red peppers, zucchini",
+		"stock": 7,
+		"available": true
+	},{
+		"id": "13",
+		"image": "/assets/img/pos/product-13.jpg",
+		"title": "Vanilla Ice Cream",
+		"description": "Heavy whipping cream, white sugar, vanilla extract",
+		"stock": 50,
+		"available": true
+	},{
+		"id": "14",
+		"image": "/assets/img/pos/product-14.jpg",
+		"title": "Perfect Yeast Doughnuts",
+		"description": "Chocolate hazelnut spread, bread flour, doughnuts, quick rise yeast, butter",
+		"stock": 10,
+		"available": true
+	},{
+		"id": "15",
+		"image": "/assets/img/pos/product-15.jpg",
+		"title": "Macarons",
+		"description": "Almond flour, egg whites, heavy cream, food coloring, powdered sugar",
+		"stock": 20,
+		"available": true
+	},{
+		"id": "16",
+		"image": "/assets/img/pos/product-16.jpg",
+		"title": "Perfect Vanilla Cupcake",
+		"description": "Baking powder, all purpose flour, plain kefir, vanilla extract",
+		"stock": 16,
+		"available": true
+	}]
+}

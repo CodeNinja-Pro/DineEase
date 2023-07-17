@@ -1,0 +1,56 @@
+<script>
+import { useAppVariableStore } from '@/stores/app-variable';
+import apexchart from '@/components/plugins/Apexcharts.vue';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data() {
+    return {
+      chart: {
+        height: 350,
+        series: [
+          { name: 'series1', data: [31, 40, 28, 51, 42, 109, 100] },
+          { name: 'series2', data: [11, 32, 45, 32, 34, 52, 41] }
+        ],
+        options: {
+          chart: { type: 'area' },
+          dataLabels: { enabled: false },
+          stroke: { curve: 'smooth', width: 3 },
+          colors: [appVariable.color.pink, appVariable.color.gray600],
+          xaxis: {
+            type: 'datetime',
+            categories: ['2019-09-19T00:00:00', '2019-09-19T01:30:00', '2019-09-19T02:30:00', '2019-09-19T03:30:00', '2019-09-19T04:30:00', '2019-09-19T05:30:00', '2019-09-19T06:30:00'],
+            axisBorder: {
+              show: true,
+              color: appVariable.color.gray300,
+              height: 1,
+              width: '100%',
+              offsetX: 0,
+              offsetY: -1
+            },
+            axisTicks: {
+              show: true,
+              borderType: 'solid',
+              color: appVariable.color.gray300,
+              height: 6,
+              offsetX: 0,
+              offsetY: 0
+            }             
+          },
+          tooltip: {
+            x: { format: 'dd/MM/yy HH:mm' }
+          }
+        }
+      }
+    }
+  },
+  components: {
+    apexchart: apexchart
+  }
+}
+</script>
+
+<template>
+  <apexchart :height="chart.height" :options="chart.options" :series="chart.series"></apexchart>
+</template>

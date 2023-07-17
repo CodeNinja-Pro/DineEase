@@ -1,0 +1,13 @@
+<script>
+import typeahead from '@/components/plugins/Typeahead.vue';
+
+export default {
+  components: {
+    typeahead: typeahead
+  }
+}
+</script>
+
+<template>
+  <typeahead :items="['One','Two','Three']" :minInputLength="1"></typeahead>
+</template>

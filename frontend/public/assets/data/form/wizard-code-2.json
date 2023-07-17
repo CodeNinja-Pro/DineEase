@@ -1,0 +1,30 @@
+<div class="nav-wizards-container">
+  <nav class="nav nav-wizards-2 mb-3">
+    <!-- completed -->
+    <div class="nav-item col">
+      <a class="nav-link completed" href="#">
+        <div class="nav-text">1. Completed step text</div>
+      </a>
+    </div>
+  
+    <!-- active -->
+    <div class="nav-item col">
+      <a class="nav-link active" href="#">
+        <div class="nav-text">2. Active step text</div>
+      </a>
+    </div>
+  
+    <!-- disabled -->
+    <div class="nav-item col">
+      <a class="nav-link disabled" href="#">
+        <div class="nav-text">3. Disabled step text</div>
+      </a>
+    </div>
+  </nav>
+</div>
+
+<card>
+  <card-body>
+    wizard content here
+  </card-body>
+</card>

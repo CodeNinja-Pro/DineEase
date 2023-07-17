@@ -1,0 +1,21 @@
+<script>
+  import Masonry from 'masonry-layout';
+  
+  export default {
+    onMounted() {
+      const msnry = new Masonry('[data-masonry]');
+    }
+  }
+</script>
+<!-- html -->
+<div class="row" data-masonry='{"percentPosition": true }'>
+  <div class="col-sm-6 col-lg-4 mb-4">
+    <card>...</card>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4">
+    <card>...</card>
+  </div>
+  <div class="col-sm-6 col-lg-4 mb-4">
+    <card>...</card>
+  </div>
+</div>

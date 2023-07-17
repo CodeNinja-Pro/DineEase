@@ -1,0 +1,9 @@
+<button type="button" class="btn btn-outline-theme me-2" data-bs-toggle="modal" data-bs-target="#modalCoverExample">Modal Cover</button>
+
+<div class="modal modal-cover fade" id="modalCoverExample">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<script>
+import { useAppVariableStore } from '@/stores/app-variable';
+import apexchart from '@/components/plugins/Apexcharts.vue';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  methods: {
+    generateHeatmapData(count, yrange) {
+      var i = 0;
+      var series = [];
+      while (i < count) {
+        var x = 'w' + (i + 1).toString();
+        var y = Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+
+        series.push({
+          x: x,
+          y: y
+        });
+        i++;
+      }
+      return series;
+    }
+  },
+  data() {
+    return {
+      chart: {
+        height: 350,
+        series: [
+          { name: 'Metric1', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }, 
+          { name: 'Metric2', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }, 
+          { name: 'Metric3', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }, 
+          { name: 'Metric4', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }, 
+          { name: 'Metric5', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }, 
+          { name: 'Metric6', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }, 
+          { name: 'Metric7', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) },
+          { name: 'Metric8', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }, 
+          { name: 'Metric9', data: this.generateHeatmapData(18, {  min: 0, max: 90 }) }
+        ],
+        options: {
+          chart: { type: 'heatmap' },
+          dataLabels: { enabled: false },
+          colors: [appVariable.color.theme],
+          title: { text: 'HeatMap Chart (Single color)' }
+        }
+      }
+    }
+  },
+  components: {
+    apexchart: apexchart
+  }
+}
+</script>
+
+<template>
+  <apexchart :height="chart.height" :options="chart.options" :series="chart.series"></apexchart>
+</template>

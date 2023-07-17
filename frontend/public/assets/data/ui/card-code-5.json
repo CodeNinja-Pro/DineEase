@@ -1,0 +1,19 @@
+<!-- image caps -->
+<card class="mb-3">
+  <card-body>
+    <img src="https://via.placeholder.com/600x400/c9d2e3/212837" alt="" class="card-img-top">
+  </card-body>
+  <card-body>
+    <h5 class="card-title">...</h5>
+    <p class="card-text">...</p>
+  </card-body>
+</card>
+
+<!-- image overlay -->
+<card class="p-3">
+  <img src="https://via.placeholder.com/600x750/000000/ffffff" alt="" class="card-img">
+  <card-img-overlay>
+    <h5 class="card-title">...</h5>
+    <p class="card-text">...</p>
+  </card-img-overlay>
+</card>

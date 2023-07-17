@@ -1,0 +1,52 @@
+<script>
+import { useAppVariableStore } from '@/stores/app-variable';
+import apexchart from '@/components/plugins/Apexcharts.vue';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data() {
+    return {
+      chart: {
+        height: 350,
+        series: [76, 67, 61, 90],
+        options: {
+          chart: { type: 'radialBar' },
+          plotOptions: {
+            radialBar: {
+              offsetY: -10,
+              startAngle: 0,
+              endAngle: 270,
+              hollow: { margin: 5, size: '30%', background: 'transparent', image: undefined },
+              track: { background: 'rgba('+ appVariable.color.inverseRgb + ', .25)' },
+              dataLabels: { name: { show: false }, value: { show: false } }
+            }
+          },
+          colors: [appVariable.color.cyan, appVariable.color.theme, appVariable.color.indigo, appVariable.color.gray300],
+          labels: ['Vimeo', 'Messenger', 'Facebook', 'LinkedIn'],
+          legend: {
+            show: true,
+            floating: true,
+            position: 'left',
+            offsetX: 140,
+            offsetY: 15,
+            labels: { useSeriesColors: true },
+            markers: { size: 0 },
+            formatter: function(seriesName, opts) {
+              return seriesName + ":  " + opts.w.globals.series[opts.seriesIndex]
+            },
+            itemMargin: { horizontal: 1 }
+          }
+        }
+      }
+    }
+  },
+  components: {
+    apexchart: apexchart
+  }
+}
+</script>
+
+<template>
+  <apexchart :height="chart.height" :options="chart.options" :series="chart.series"></apexchart>
+</template>

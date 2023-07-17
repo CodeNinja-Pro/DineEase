@@ -1,0 +1,5 @@
+<!-- example -->
+<div class="bg-primary w-30px h-30px rounded"></div>
+
+<!-- subtle example -->
+<div class="bg-primary-subtle w-30px h-30px rounded"></div>

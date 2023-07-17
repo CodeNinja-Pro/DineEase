@@ -1,0 +1,14 @@
+<!-- using grid -->
+<div class="row">
+  <div class="col-sm-8">
+    <card>...</card>
+  </div>
+</div>
+
+<!-- using utilities -->
+<card class="w-25">...</card>
+<card class="w-50">...</card>
+<card class="w-75">...</card>
+
+<!-- using custom css -->
+<card style="width: 18rem;">...</card>

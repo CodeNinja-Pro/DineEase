@@ -1,0 +1,33 @@
+<card>
+  <card-header class="bg-none fw-bold d-flex align-items-center">Discussion group <card-expand-toggler></card-expand-toggler></card-header>
+  <perfect-scrollbar class="h-200px">
+    <card-body class="bg-inverse bg-opacity-10">
+      <div class="widget-chat">
+        <div class="widget-chat-item">
+          <div class="widget-chat-media"><img src="/assets/img/user/user-2.jpg" alt=""></div>
+          <div class="widget-chat-content">
+            <div class="widget-chat-name">Roberto Lambert</div>
+            <div class="widget-chat-message last">
+              Hey, I'm testing out group messaging.
+            </div>
+          </div>
+        </div>
+        <div class="widget-chat-item reply">
+          <div class="widget-chat-content">
+            <div class="widget-chat-message last">
+              Cool
+            </div>
+            <div class="widget-chat-status"><b>Read</b> 16:26</div>
+          </div>
+        </div>
+        <div class="widget-chat-date">Today 14:21</div>
+      </div>
+    </card-body>
+  </perfect-scrollbar>
+  <card-footer class="bg-none">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for...">
+      <button class="btn btn-outline-default" type="button"><i class="fa fa-paper-plane text-muted"></i></button>
+    </div>
+  </card-footer>
+</card>

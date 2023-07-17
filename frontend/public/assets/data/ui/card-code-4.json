@@ -1,0 +1,19 @@
+<card>
+  <card-header>
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      ...
+    </ul>
+  </card-header>
+</card>
+
+<!-- nav-pills -->
+<card>
+  <card-header>
+    <ul class="nav nav-pills card-header-pills">
+      ...
+    </ul>
+  </card-header>
+</card>

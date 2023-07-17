@@ -1,0 +1,27 @@
+<!-- On rows -->
+<tr class="table-active">...</tr>
+<tr class="table-primary">...</tr>
+<tr class="table-secondary">...</tr>
+<tr class="table-success">...</tr>
+<tr class="table-danger">...</tr>
+<tr class="table-warning">...</tr>
+<tr class="table-info">...</tr>
+<tr class="table-light">...</tr>
+<tr class="table-dark">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="table-active">...</td>
+</tr>
+
+<!-- On rows -->
+<tr class="bg-primary">...</tr>
+<tr class="bg-success">...</tr>
+<tr class="bg-warning">...</tr>
+<tr class="bg-danger">...</tr>
+<tr class="bg-info">...</tr>
+
+<!-- On cells (`td` or `th`) -->
+<tr>
+  <td class="bg-primary">...</td>
+</tr>

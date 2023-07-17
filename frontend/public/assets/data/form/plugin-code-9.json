@@ -1,0 +1,33 @@
+<script>
+import colorPicker from '@caohenghu/vue-colorpicker';
+
+export default {
+  data () {
+    return {
+      color: 'rgba(0, 122, 255, 1)'
+    }
+  },
+  components: {
+    colorPicker: colorPicker
+  },
+  methods: {
+    changeColor(color) {
+      const { r, g, b, a } = color.rgba
+      this.color = `rgba(${r}, ${g}, ${b}, ${a})`;
+    }
+  }
+}
+</script>
+
+<template>
+  <div class="input-group position-relative">
+    <span class="input-group-text p-1">
+      <span class="h-20px w-20px rounded d-block mx-3px" v-bind:style="{ backgroundColor: color }"></span>
+    </span>
+    <a href="#" class="stretched-link" data-bs-toggle="dropdown" data-bs-auto-close="outside"></a>
+    <div class="dropdown-menu p-2">
+      <color-picker :color="color" @changeColor="changeColor"></color-picker>
+    </div>
+    <input type="text" v-model="color" class="form-control">
+  </div>
+</template>

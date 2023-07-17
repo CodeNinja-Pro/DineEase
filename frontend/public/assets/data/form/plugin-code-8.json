@@ -1,0 +1,16 @@
+<script>
+import vueSelect from '@/components/plugins/vueSelect.vue';
+export default {
+  components: {
+    vueSelect: vueSelect
+  }
+}
+</script>
+
+<template>
+  <!-- default -->
+  <vue-select :options="['Mustard', 'Ketchup', 'Relish']" placeholder="-- Select Option --"></vue-select>
+
+  <!-- multiple -->
+  <vue-select :options="['Mustard', 'Ketchup', 'Relish']" placeholder="-- Select Option --" multiple></vue-select>
+</template>

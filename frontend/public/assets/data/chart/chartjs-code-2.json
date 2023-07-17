@@ -1,0 +1,39 @@
+<script>
+import chartjs from '@/components/plugins/Chartjs.vue';
+import { useAppVariableStore } from '@/stores/app-variable';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data () {
+    return {
+      chart: {
+        type: 'bar',
+        data: {
+          labels: ['Jan','Feb','Mar','Apr','May','Jun'],
+          datasets: [{
+            label: 'Total Visitors',
+            data: [37,31,36,34,43,31],
+            backgroundColor: 'rgba('+ appVariable.color.themeRgb +', .5)',
+            borderColor: appVariable.color.theme,
+            borderWidth: 1.5
+          },{
+            label: 'New Visitors',
+            data: [12,16,20,14,23,21],
+            backgroundColor: 'rgba('+ appVariable.color.inverseRgb +', .2)' +', .5)',
+            borderColor: 'rgba('+ appVariable.color.inverseRgb +', .65)',
+            borderWidth: 1.5
+          }]
+        }
+      }
+    }
+  },
+  components: {
+    chartjs: chartjs
+  }
+}
+</script>
+
+<template>
+  <chartjs :type="chart.type" :data="chart.data"></chartjs>
+</template>

@@ -1,0 +1,31 @@
+<script>
+import chartjs from '@/components/plugins/Chartjs.vue';
+import { useAppVariableStore } from '@/stores/app-variable';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data () {
+    return {
+      chart: {
+        type: 'polarArea',
+        data: {
+          datasets: [{
+            data: [11, 16, 7, 3, 14],
+            backgroundColor: ['rgba('+ appVariable.color.themeRgb +', .5)', 'rgba('+ appVariable.color.inverseRgb +', .2)' +', .5)', 'rgba('+ appVariable.color.gray300Rgb +', .5)', 'rgba('+ appVariable.color.gray500Rgb +', .5)', 'rgba('+ appVariable.color.gray800Rgb +', .5)'],
+            borderWidth: 0
+          }],
+          labels: ['IE', 'Safari', 'Chrome', 'Firefox', 'Opera']
+        }
+      }
+    }
+  },
+  components: {
+    chartjs: chartjs
+  }
+}
+</script>
+
+<template>
+  <chartjs :type="chart.type" :data="chart.data"></chartjs>
+</template>

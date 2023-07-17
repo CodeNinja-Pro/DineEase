@@ -1,0 +1,4 @@
+<!-- example -->
+<div class="d-flex align-items-center">
+  <div class="flex-fill"></div>
+</div>

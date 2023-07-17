@@ -1,0 +1,81 @@
+<script>
+import { useAppVariableStore } from '@/stores/app-variable';
+import apexchart from '@/components/plugins/Apexcharts.vue';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data() {
+    return {
+      chart: {
+        height: 350,
+        series: [
+          { name: 'High - 2021', data: [28, 29, 33, 36, 32, 32, 33] }, 
+          { name: 'Low - 2021', data: [12, 11, 14, 18, 17, 13, 13] }
+        ],
+        options: {
+          chart: {
+            type: 'line',
+            shadow: {
+              enabled: true,
+              color: 'rgba('+ appVariable.color.inverseRgb + ', .5)',
+              top: 18,
+              left: 7,
+              blur: 10,
+              opacity: 1
+            },
+            toolbar: { show: false }
+          },
+          title: {
+            text: 'Average High & Low Temperature',
+            align: 'center',
+            color: appVariable.color.inverse
+          },
+          colors: [appVariable.color.theme, appVariable.color.gray500],
+          dataLabels: {
+            enabled: true,
+            background: {
+              enabled: true,
+              foreColor: appVariable.color.inverse,
+              padding: 4,
+              borderRadius: 2,
+              borderWidth: 0,
+              borderColor: appVariable.color.inverse,
+              opacity: 0.9,
+              dropShadow: {
+                enabled: false,
+                top: 1,
+                left: 1,
+                blur: 1,
+                color: appVariable.color.black,
+                opacity: 0.45
+              }
+            },
+          },
+          stroke: { curve: 'smooth', width: 3 },
+          grid: {
+            row: { colors: ['rgba('+ appVariable.color.inverseRgb + ', .25)', 'transparent'], opacity: 0.5 }
+          },
+          markers: { size: 4 },
+          xaxis: { categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'] },
+          yaxis: { min: 5, max: 40 },
+          legend: {
+            show: true,
+            position: 'top',
+            offsetY: -10,
+            horizontalAlign: 'right',
+            floating: true
+          }
+        }
+      }
+    }
+  },
+  components: {
+    apexchart: apexchart
+  }
+}
+</script>
+
+<template>
+  <apexchart :height="chart.height" :options="chart.options" :series="chart.series"></apexchart>
+</template>

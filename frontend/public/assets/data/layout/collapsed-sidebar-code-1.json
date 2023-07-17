@@ -1,0 +1,14 @@
+<script>
+import { useAppOptionStore } from '@/stores/app-option';
+
+const appOption = useAppOptionStore();
+
+export default {
+  mounted() {
+    appOption.appSidebarCollapsed = true;
+  },
+  beforeUnmount() {
+    appOption.appSidebarCollapsed = false;
+  }
+}
+</script>

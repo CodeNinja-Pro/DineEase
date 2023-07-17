@@ -1,0 +1,5 @@
+<div class="btn-group">
+  <button type="button" class="btn btn-outline-secondary">Left</button>
+  <button type="button" class="btn btn-outline-secondary">Middle</button>
+  <button type="button" class="btn btn-outline-secondary">Right</button>
+</div>

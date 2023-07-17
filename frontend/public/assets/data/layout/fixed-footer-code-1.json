@@ -1,0 +1,15 @@
+<script>
+import { useAppOptionStore } from '@/stores/app-option';
+
+const appOption = useAppOptionStore();
+
+appOption.appFooterFixed = true;
+appOption.appFooter = true;
+
+export default {
+  beforeUnmount() {
+    appOption.appFooterFixed = false;
+    appOption.appFooter = false;
+  }
+}
+</script>

@@ -1,0 +1,7 @@
+<!-- active state -->
+<a href="#" class="btn btn-outline-theme btn-lg active">Primary link</a>
+<a href="#" class="btn btn-outline-secondary btn-lg active">Link</a>
+
+<!-- disabled state -->
+<button type="button" class="btn btn-lg btn-outline-theme" disabled>Primary button</button>
+<button type="button" class="btn btn-outline-secondary btn-lg" disabled>Button</button>

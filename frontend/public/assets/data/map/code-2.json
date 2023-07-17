@@ -1,0 +1,26 @@
+<script>
+import { GoogleMap, Marker } from 'vue3-google-map';
+
+const appVariable = useAppVariableStore();
+
+export default {
+  data() {
+    return {
+      center: { lat: 40.689247, lng: -74.044502 }
+    }
+  },
+  components: {
+    googleMap: GoogleMap,
+    googleMapMarker: Marker
+  }
+}
+</script>
+<template>
+  <google-map 
+    api-key="YOUR_GOOGLE_MAPS_API_KEY" 
+    class="h-300px w-100" 
+    :center="center" 
+    :zoom="15">
+    <google-map-marker :options="{ position: center }"></google-map-marker>
+  </google-map>
+</template>
