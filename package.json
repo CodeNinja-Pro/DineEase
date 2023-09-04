@@ -4,7 +4,12 @@
   "description": "Food Reservation System",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "concurrently \"npm run dev:server\" \"npm run dev:client\" --raw",
+    "build": "concurrently \"npm run build:server\" \"npm run build:client\"",
+    "dev:client": "npm run --prefix frontend vite",
+    "build:client": "npm run --prefix frontend build",
+    "dev:server": "npm run --prefix backend start"
   },
   "author": "edwinjackson0116@gmail.com",
   "license": "ISC"
