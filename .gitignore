@@ -1,25 +1,15 @@
-# Ignore node_modules directory
-node_modules/
+# Dependencies
+/node_modules
+*.local
+yarn.lock
+package-lock.json
 
-# Ignore build artifacts
-build/
-dist/
-
-# Ignore environment files
-.env
-.env.local
-
-# Ignore log files
-logs/
-*.log
-
-# Ignore npm debug log
-npm-debug.log*
-
-# Ignore Vue.js build artifacts
-/dist/
-/.nuxt/
-
-# Ignore Express.js build artifacts
-/build/
-/public/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
