@@ -26,7 +26,7 @@ Vue.js, Pinia, Node.js, Express, MySql, Typescript, SCSS
 1. Clone the repository to your local machine
 
 ```bash
- git clone https://github.com/edwin-jackson/3D_Portfolio.git
+ git clone https://github.com/edwin-jackson/DineEase.git
 ```
 2. Navigate to the project directory
 
